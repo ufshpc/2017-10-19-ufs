@@ -2,23 +2,38 @@
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
 carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+venue: "University of the Free State"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "TBC"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "South Africa"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "English"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)n
-latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
+latlng: "-26.694242,27.0970595"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
 humandate: "Oct 19-20, 2017"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+humantime: "9:00 - 16:30"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2017-10-19      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2017-10-20        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Fanie Riekert"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+instructor: ["Fanie Riekert", "Tibane Hlongwane", "TBC"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["TBC"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: ["hpc@ufs.ac.za"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+collaborative_notes:   http://pad.software-carpentry.org/2017-10-19-UFS          # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 <!-- See instructions in the comments below for how to edit specific sections of this workshop template. -->
+
+<div>
+<table>
+	
+	<tr>
+	<td align="center" style="background-color:white" style="width:33.3%"><a href="http://www.ufs.ac.za/"><img style="display:block;" height="100%"  src="./fig/ufs_logo.png" alt="University of the Free State"></a></td>
+	<td align="center" style="background-color:white" style="width:33.3%"><a href="http://www.usaf.ac.za/wp-content/uploads/2016/11/Discussion-document-The-Rural-Campuses-Connection-Project.pdf"><img style="display:block;" height="100%" src="./fig/dhet_logo.png" alt="DHET RCCP II"></a></td>
+	<td align="center" style="background-color:white" style="width:33.3%"><a href="http://www.talarify.co.za"><img style="display:block;" height="70%" src="./fig/talarify.png" alt="Talarify"></a></td>
+	<td align="center" style="background-color:white" style="width:33.3%"><a href="http://www.nwu.ac.za"><img style="display:block;" height="70%" src="./fig/nwu_logo.png" alt="North-West University"></a></td>
+
+	</tr>
+</table>
+
+</div>
+
 
 <!--
   HEADER
@@ -47,10 +62,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </iframe>
 {% endif %}
 
-<h4>This is the workshop template. Delete these lines and use it to customize your own website.
-If you are running a self-organized workshop or have not put in a workshop request yet, please also fill in 
-<a href="{{site.amy_site}}/submit">this workshop request form</a> to let us know about your workshop
-and our administrator may contact you if we need any extra information.</h4>
 
 <h2 id="general">General Information</h2>
 
@@ -67,6 +78,11 @@ and our administrator may contact you if we need any extra information.</h4>
 {% elsif page.carpentry == "lc" %}
   {% include lc/intro.html %}
 {% endif %}
+
+<p>The workshop is jointly funded and organised by <a href="https://www.ufs.ac.za/">the University of the Free State's HPC Group</a>, 
+	the <a href="http://www.nwu.ac.za/">North-West University eResearch Iniitative</a>, <a href="http://talarify.co.za/">Talarify</a>, 
+	and the <a href="http://www.usaf.ac.za/wp-content/uploads/2016/11/Discussion-document-The-Rural-Campuses-Connection-Project.pdf">DHET Rural Campus Connectivity Programme II</a>.
+</p>
 
 <!--
   AUDIENCE
